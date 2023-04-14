@@ -1,6 +1,7 @@
 {% macro get_keyword_stats_columns() %}
 
 {% set columns = [
+    {"name": "clerk_org_id", "datatype": dbt.type_string()},
     {"name": "_fivetran_id", "datatype": dbt.type_string()},
     {"name": "_fivetran_synced", "datatype": dbt.type_timestamp()},
     {"name": "ad_group_criterion_criterion_id", "datatype": dbt.type_int()},

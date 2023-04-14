@@ -22,6 +22,7 @@ final as (
     
     select 
         _fivetran_id as keyword_id,
+        clerk_org_id,
         customer_id as account_id, 
         date as date_day, 
         cast(ad_group_id as {{ dbt.type_string() }}) as ad_group_id,

@@ -24,6 +24,7 @@ final as (
     
     select 
         customer_id as account_id, 
+        clerk_org_id,
         date as date_day, 
         {% if target.type in ('spark','databricks') %}
         coalesce(cast(ad_group_id as {{ dbt.type_string() }}), split(ad_group,'adGroups/')[1]) as ad_group_id,

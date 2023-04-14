@@ -24,6 +24,7 @@ final as (
     
     select 
         id as campaign_id, 
+        clerk_org_id,
         updated_at,
         name as campaign_name,
         customer_id as account_id,

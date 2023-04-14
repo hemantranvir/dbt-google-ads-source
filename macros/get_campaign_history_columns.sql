@@ -1,6 +1,7 @@
 {% macro get_campaign_history_columns() %}
 
 {% set columns = [
+    {"name": "clerk_org_id", "datatype": dbt.type_string()},
     {"name": "advertising_channel_subtype", "datatype": dbt.type_string()},
     {"name": "advertising_channel_type", "datatype": dbt.type_string()},
     {"name": "customer_id", "datatype": dbt.type_int()},

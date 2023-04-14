@@ -24,6 +24,7 @@ final as (
     
     select 
         id as account_id,
+        clerk_org_id,
         updated_at,
         currency_code,
         auto_tagging_enabled,

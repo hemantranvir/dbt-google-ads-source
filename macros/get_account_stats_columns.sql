@@ -1,6 +1,7 @@
 {% macro get_account_stats_columns() %}
 
 {% set columns = [
+    {"name": "clerk_org_id", "datatype": dbt.type_string()},
     {"name": "_fivetran_id", "datatype": dbt.type_string()},
     {"name": "_fivetran_synced", "datatype": dbt.type_timestamp()},
     {"name": "ad_network_type", "datatype": dbt.type_string()},

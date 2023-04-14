@@ -23,6 +23,7 @@ final as (
     
     select 
         cast(ad_group_id as {{ dbt.type_string() }}) as ad_group_id, 
+        clerk_org_id,
         id as ad_id,
         name as ad_name,
         updated_at,

@@ -22,6 +22,7 @@ final as (
     
     select 
         id as criterion_id,
+        clerk_org_id,
         cast(ad_group_id as {{ dbt.type_string() }}) as ad_group_id,
         base_campaign_id,
         updated_at,

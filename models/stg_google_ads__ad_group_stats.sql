@@ -22,6 +22,7 @@ final as (
     
     select
         customer_id as account_id, 
+        clerk_org_id,
         date as date_day, 
         cast(id as {{ dbt.type_string() }}) as ad_group_id, 
         campaign_id, 

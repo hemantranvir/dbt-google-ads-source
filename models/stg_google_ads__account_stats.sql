@@ -22,6 +22,7 @@ final as (
     
     select 
         customer_id as account_id, 
+        clerk_org_id,
         date as date_day,
         ad_network_type,
         device,

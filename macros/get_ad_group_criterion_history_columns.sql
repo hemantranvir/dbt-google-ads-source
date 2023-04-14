@@ -1,6 +1,7 @@
 {% macro get_ad_group_criterion_history_columns() %}
 
 {% set columns = [
+    {"name": "clerk_org_id", "datatype": dbt.type_string()},
     {"name": "id", "datatype": dbt.type_int()},
     {"name": "ad_group_id", "datatype": dbt.type_int()},
     {"name": "base_campaign_id", "datatype": dbt.type_int()},
